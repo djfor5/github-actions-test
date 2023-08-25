@@ -1,9 +1,10 @@
-const { add, subtract, multiply } = require("../math.js");
+const { add, subtract, multiply } = require("../math.js"); // eslint-disable-line no-unused-vars
 
 /* eslint-disable no-undef */
 
 test("Expect 2 + 3 = 5", () => {
-  expect(add(2, 3)).toEqual(5);
+  // expect(add(2, 3)).toEqual(5);
+  throw new Error("Test forced to fail");
 });
 
 test("Expect 5 - 2 = 3", () => {
