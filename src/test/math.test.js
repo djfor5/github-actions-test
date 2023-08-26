@@ -12,8 +12,8 @@ test("Expect 2 + 3 = 5", () => {
   // throw new Error("Test forced to fail");
 });
 
-test("Expect 5 - 2 = 3", () => {
-  expect(subtract(5, 2)).toEqual(3);
+test("Expect 7 - 2 = 5", () => {
+  expect(subtract(7, 2)).toEqual(5);
 });
 
 test("Expect 2 * 3 = 6", () => {
