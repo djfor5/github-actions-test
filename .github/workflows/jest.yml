@@ -1,4 +1,4 @@
-name: Jest Example with changes
+name: Jest Example
 
 on:
   push:
