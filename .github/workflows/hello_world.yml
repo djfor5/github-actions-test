@@ -1,0 +1,25 @@
+name: Hello world workflow
+
+on: # trigger to run workflow
+  push:
+    - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch: # enables manual triggering of workflow
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3 # only required if the repo actually needs to be checked out
+      - name: hello world
+        run: echo "Hello world"
+        shell: bash
+
+  goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: goodbye world
+        run: echo "Goodbye world"
+        shell: bash
